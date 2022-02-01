@@ -1,0 +1,54 @@
+ion-content {
+    --background: var(--ion-color-fondo);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+  }
+  
+  ion-slides {
+    height: 96%;
+    max-width: 800px;
+    background-color: rgb(255, 0, 0);
+    margin:10px;
+    border-radius: 25px;
+    border: solid 2px black;
+  }
+  .swiper-slide {
+    display: block;
+    margin-bottom: 60px;
+    color: var(--ion-color-primary);
+  }
+  
+  ion-slide > h1, h2 {
+    margin: 0 0 0 0;
+    color: #ffffff;
+
+  }
+  
+  ion-slide > p {
+    border-width: 2px;
+    font-style: italic;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+    margin: 25px 25px 25px 25px;
+    color: black;
+  }
+  
+  ion-slide > ion-icon {
+    color: red;
+  }
+  
+  ion-slide {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+  img{
+    width:200px;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  ion-slide > ion-icon[name=chevron-forward-circle-outline] {
+    color: red;
+    font-size: 50px;
+  }

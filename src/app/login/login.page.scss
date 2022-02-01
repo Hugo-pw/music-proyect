@@ -1,0 +1,70 @@
+ion-content {
+  --background: var(--ion-color-fondo);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+.alert {
+  padding: 5px;
+  margin: 5px 0px 0px 5px;
+  background-color: rgb(255, 255, 255);
+  color: var(--ion-color-danger);
+  border: 1px solid var(--ion-color-danger);
+  border-radius: 5px;
+  width: 96%;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  .login-content{
+    background-color: rgb(255, 0, 0);
+    display: block;
+    border-radius: 25px;
+    border: 2px solid black;
+    height: 96%;
+    width: 96%;
+    margin: 10px auto 0 auto;
+  }
+  .redondoTop{
+    --background: #ffffff00;
+    border-bottom: 1px solid black;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    width: 96%;
+  }
+  .redondoBottom{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 96%;
+    --background: #ffffff00;
+    border-bottom: 1px solid black;
+    color: rgb(255, 255, 255);
+  }
+  .loginBtn{
+
+    bottom: 20px;
+    left: 10px;
+    width: 100%;
+  }
+  .registerBtn{
+
+    bottom: 20px;
+    right: 10px;
+    width: 100%;
+  }
+img{
+width: 140px;
+height: 140px;
+}

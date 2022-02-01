@@ -1,0 +1,36 @@
+ion-content {
+    --background: var(--ion-color-fondo);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+  }
+ion-item{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 96%;
+    --background: #ffffff00;
+    border-bottom: 1px solid black;
+    color: rgb(255, 255, 255);
+}
+.alert {
+    padding: 5px;
+    margin: 5px 0px 0px 5px;
+    background-color: white;
+    color: var(--ion-color-danger);
+    border: 1px solid var(--ion-color-danger);
+    border-radius: 5px;
+    width: 96%;
+  }
+.registerContent{
+    background-color: rgb(255, 0, 0);
+    display: block;
+    border-radius: 25px;
+    border: 2px solid black;
+    height: 96%;
+    width: 96%;
+    margin: 10px auto 0 auto;
+}
+.registerBtn{
+    position: fixed;
+    bottom: 20px;
+    width: 92%;
+  }

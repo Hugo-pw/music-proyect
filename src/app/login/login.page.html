@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-capitalize">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="login-content">
+      <div class="ion-text-center" >
+        <img src="assets/images/logo.jpg"/> 
+      </div>
+      <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm.value)">
+        <ion-item class="redondoTop">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input placeholder="Ingrese su correo" formControlName="email"></ion-input>
+        </ion-item>
+  
+        <div>
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div
+              *ngIf="
+              loginForm.get('email').hasError(validation.type) &&
+                (loginForm.get('email').dirty || 
+                loginForm.get('email').touched
+              )"
+            >
+            <div class="alert">
+              <strong>Error: </strong> {{ validation.message }}
+            </div>
+            </div>
+          </ng-container>
+        </div>
+  
+        <ion-item class="redondoBottom">
+          <ion-label position="floating" >Password</ion-label>
+          <ion-input placeholder="Ingrese su contraseña" formControlName="password" type="password"></ion-input>
+        </ion-item>
+  
+        <div class="validation-error">
+          <ng-container *ngFor="let validation of validation_messages.password">
+            <div
+              *ngIf="
+              loginForm.get('password').hasError(validation.type) &&
+                (loginForm.get('password').dirty || 
+                loginForm.get('password').touched
+              )"
+            >
+            <div class="alert">
+              <strong>Error: </strong> {{ validation.message }}
+            </div>
+            </div>
+          </ng-container>
+        </div>
+        <div class="alert" *ngIf="errorMessage != '' ">
+          <strong>Error: </strong> {{errorMessage}}
+        </div>
+        <ion-button class="loginBtn" expand="full" shape="round" type="submit" [disabled]="!loginForm.valid">Login</ion-button>
+        <br><br/>
+        <br><br/>
+        <br><br/>
+        <ion-button class="registerBtn" expand="full" shape="round" type="submit" (click)="goToRegister()">Registrate!</ion-button>
+      </form> 
+    </div>
+</ion-content>
